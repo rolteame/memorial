@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    
+
+    <title>ADIEU, Segun</title>
+  </head>
+  <body>
+    <nav class="navigation">
+      <p class="p-1"><a class="nav-item" href="./index.html">Home</a></p>
+      <p class="p-1"><a class="nav-item" href="./condolences.html">Condolences</a></p>
+      <!-- Button trigger modal -->
+      <p
+        type="button"
+        class="btn btn-primary comment"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Leave a Comment
+      </p>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark" id="exampleModalLabel">Condolence Comment</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="fullName" class="form-label text-dark">Full Name</label>
+                <input type="text" autocomplete="off" class="form-control" id="fullName" required='required' placeholder="Enter your Name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label text-dark">Email</label>
+                <input type="email" autocomplete="off" class="form-control" id="email" required='required'  placeholder="Enter your Email">
+              </div>
+              <div class="mb-3">
+                <label for="condolence" class="form-label text-dark">Comment</label>
+                <textarea class="form-control" autocomplete="off" id="condolence" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+                id="test"              >
+                Close
+              </button>
+              <button type="button" id="submit" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <header>
+        <h1>ADEBIYI, Olusegun Samuel</h1>
+        <h3>(1952 - 2021)</h3>
+      </header>
+      <div class="container content">
+        <div class="content-img">
+          <img
+            class="side-img img-fluid"
+            src="./images/Daddy 1.jpg"
+            alt="Segun Adebiyi's Image"
+          />
+        </div>
+        <div class="content-text" id="showCondolences">
+          <pre>
+            Remember me, Miss me
+            But let me go
+            To the living, I am gone
+            To the sorrowful, I will never return
+            To the angry, I was cheated
+            But to the happy, I am at peace
+            And to the faithful, I never left
+
+            Remember me in your hearts, your thoughts, 
+            and the memories of the love we shared
+            The times we fought and the times we laughed
+            For if you always think of me, I will never have gone
+
+            Miss me, but let me go
+            This is a journey we all must take, 
+            and each must go alone: 
+            It’s all a part of the Master’s plan
+
+            Goodbye Olusegun Samuel Adebiyi
+            ADIEU!
+          </pre>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
+
+
