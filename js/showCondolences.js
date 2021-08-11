@@ -1,4 +1,4 @@
-import { showCondolences } from "./datamanagement.js";
+import { sendCondolence, showCondolences } from "./datamanagement.js";
 
 
 const showMessage = () => {
@@ -6,3 +6,8 @@ const showMessage = () => {
   showCard.addEventListener('load', showCondolences());
 }
 showMessage();
+
+const sendMessage = () => {
+  const submit = document.getElementById('submit');
+  submit.addEventListener('click', sendCondolence);
+}

@@ -1,4 +1,4 @@
-import { sendCondolence, showCondolences } from "../js/datamanagement.js";
+import { sendCondolence } from "../js/datamanagement.js";
 
 
 document.addEventListener('readystatechange', (event) => {

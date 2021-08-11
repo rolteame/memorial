@@ -69,3 +69,6 @@ header > h3 {
 .content-text {
   flex-basis: 50%;
 }
+.table {
+  table-layout: fixed;
+}
